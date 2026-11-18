@@ -8,3 +8,4 @@ license = "MIT"
 repository = "https://github.com/tempo-v2/tempo-types"
 
 [dependencies]
+serde = { version = "1", features = ["derive"] }
