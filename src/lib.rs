@@ -12,10 +12,16 @@
 pub mod counters;
 pub mod grade;
 pub mod identifiers;
+pub mod plan_basis;
 pub mod prelude;
 pub mod study_time;
+pub mod work_token;
 
 pub use counters::{ContentVersion, MissRevision, Revision, StudyDay};
 pub use grade::Grade;
 pub use identifiers::{AttemptId, DatasetId, EventId, SubmissionId, TargetId};
+pub use plan_basis::{
+    MembershipEpoch, PlanBasis, PlanGeneration, RankRevision, SummaryBasis, SummaryEpoch,
+};
 pub use study_time::StudyTime;
+pub use work_token::{DeferredWork, WorkKind, WorkObligation, WorkToken};
