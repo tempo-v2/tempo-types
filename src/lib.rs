@@ -13,6 +13,7 @@ pub mod counters;
 pub mod grade;
 pub mod identifiers;
 pub mod plan_basis;
+mod plan_entry;
 pub mod prelude;
 pub mod study_time;
 pub mod work_token;
@@ -25,3 +26,5 @@ pub use plan_basis::{
 };
 pub use study_time::StudyTime;
 pub use work_token::{DeferredWork, WorkKind, WorkObligation, WorkToken};
+
+pub use plan_entry::{PlanEntry, PlanEntryState, PlanHead, PlanPriority};
